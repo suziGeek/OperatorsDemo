@@ -14,19 +14,23 @@ namespace HelloWorld
 
             Console.WriteLine($"{a}/{b} is {quotient} remainder is {remainder}");
 
-            Console.WriteLine($"Enter number for radius")
-               int r = Console.ReadLine()
+            Console.WriteLine($"Enter A radius to calculate the area of a circle");
+
+            var userInput = Console.ReadLine();
+            var radius = Double.Parse(userInput);
+
+            var area = AreaOfCircle(radius);
+
+            Console.WriteLine($"{area} is the area of a circle with {radius} radius");
+
+         
 
         }
 
-        static int AreaOfCircle(r)
+        static double AreaOfCircle(double radius)
         {
-           // pi* r ^2
-           Console.WriteLine($"We will give you your answer...")
-                
-
-
-       ;
+           return  (Math.PI) * (radius * radius);
         }
+        
     }
 }
